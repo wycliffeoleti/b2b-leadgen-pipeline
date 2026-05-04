@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Type checking
+.mypy_cache/
+
+# Automation artifacts
+clients/*/credentials/
+clients/*/.env
+data/*.db
+data/*.sqlite3
+logs/
+output/
+exports/
+
+# Claude Code local settings (machine-specific, not shared)
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Secrets baseline
+.secrets.baseline
+
+# Misc
+.DS_Store
