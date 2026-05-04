@@ -1,0 +1,15 @@
+{
+  "search_criteria": {
+    "industry": "SaaS",
+    "location": "Austin, TX",
+    "company_size_min": 10,
+    "company_size_max": 200,
+    "keywords": ["B2B", "startup"]
+  },
+  "qualification_criteria": {
+    "ideal_company_size": "10-200 employees",
+    "target_industries": "SaaS, Cloud, Developer Tools",
+    "budget_signals": "Recently funded, hiring, growing team",
+    "disqualifiers": "Enterprise-only, government contracts, pre-revenue"
+  }
+}
