@@ -1,0 +1,26 @@
+You are a B2B lead qualification expert. Evaluate this company as a potential lead.
+
+## Qualification Criteria
+{% for key, value in criteria.items() %}
+- {{ key }}: {{ value }}
+{% endfor %}
+
+## Company Information
+- Company: {{ lead.company_name }}
+- Industry: {{ lead.industry or "Unknown" }}
+- Location: {{ lead.location or "Unknown" }}
+- Size: {{ lead.employee_count or "Unknown" }} employees
+- Website: {{ lead.website or "Unknown" }}
+- Description: {{ lead.description or "No description available" }}
+{% if lead.contact_name %}
+- Contact: {{ lead.contact_name }}{% if lead.contact_title %} ({{ lead.contact_title }}){% endif %}
+
+{% endif %}
+
+## Instructions
+Return ONLY valid JSON with these fields:
+- score: integer 0-100 (higher = better fit)
+- qualification_reasoning: string explaining your assessment
+- fit_signals: list of strings with positive indicators
+- risk_signals: list of strings with concerns
+- recommended_action: one of "pursue", "nurture", "skip"
