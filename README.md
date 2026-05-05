@@ -1,9 +1,32 @@
 # first-agentic-workflow
 
+[![CI](https://github.com/wycliffeoleti/first-agentic-workflow/actions/workflows/ci.yml/badge.svg)](https://github.com/wycliffeoleti/first-agentic-workflow/actions/workflows/ci.yml)
+[![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
+[![Type checked: mypy --strict](https://img.shields.io/badge/mypy-strict-blue)](http://mypy-lang.org/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 A small, deterministic-where-possible agentic pipeline for B2B lead generation:
 **scrape → dedup → qualify (LLM) → export → notify**. AI is used for reasoning
 and scoring; everything else is plain Python so errors don't compound across
 chained LLM calls.
+
+## Why this design
+
+Each chained LLM call multiplies error probability — five 90%-accurate steps
+collapse to ~59% end-to-end. So the pipeline confines AI to one step
+(qualification) and uses deterministic Python for everything around it
+(scraping, dedup, export, cost tracking). Three concrete consequences:
+
+- **Dedup runs *before* the LLM**, not after — the qualifier never re-scores a
+  lead, which protects the budget.
+- **Hard budget cap**: the cost tracker raises `BudgetExceededError` mid-run
+  rather than silently overrunning.
+- **Dry-run is the default for development**: every external call has a local
+  fixture path, so you can iterate at zero cost.
+
+See [`samples/example_dry_run.csv`](samples/example_dry_run.csv) and
+[`samples/example_dry_run.json`](samples/example_dry_run.json) for what a run
+produces.
 
 ## What it does
 
@@ -69,6 +92,14 @@ uv run pytest tests/ -x -q
 ```
 
 Or run pytest in a fresh shell where ROS isn't sourced.
+
+## Built with
+
+Pair-programmed with [Claude Code](https://www.claude.com/product/claude-code)
+(Anthropic's CLI agent). Architecture decisions, scope boundaries, design
+tradeoffs, and review are mine; Claude executed code, ran the test loop, and
+drafted documentation under direction. Commit history reflects this with
+`Co-Authored-By:` trailers.
 
 ## License
 

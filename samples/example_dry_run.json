@@ -1,0 +1,112 @@
+[
+  {
+    "raw": {
+      "company_name": "Acme SaaS Inc",
+      "website": "https://acmesaas.com",
+      "industry": "SaaS",
+      "location": "Austin, TX",
+      "employee_count": 45,
+      "description": "B2B project management platform for mid-market teams.",
+      "contact_name": "Jane Smith",
+      "contact_email": "jane@acmesaas.com",
+      "contact_title": "VP of Sales",
+      "source_url": "https://google.com/search?q=saas+austin",
+      "scraped_at": "2026-05-05T09:39:00.716134"
+    },
+    "score": 50,
+    "qualification_reasoning": "Dry run \u2014 no API call made.",
+    "fit_signals": [
+      "dry_run"
+    ],
+    "risk_signals": [],
+    "recommended_action": "nurture"
+  },
+  {
+    "raw": {
+      "company_name": "CloudMetrics LLC",
+      "website": "https://cloudmetrics.io",
+      "industry": "SaaS",
+      "location": "Austin, TX",
+      "employee_count": 120,
+      "description": "Cloud infrastructure monitoring and observability platform.",
+      "contact_name": "Bob Johnson",
+      "contact_email": "bob@cloudmetrics.io",
+      "contact_title": "CTO",
+      "source_url": "https://google.com/search?q=saas+austin",
+      "scraped_at": "2026-05-05T09:39:00.716134"
+    },
+    "score": 50,
+    "qualification_reasoning": "Dry run \u2014 no API call made.",
+    "fit_signals": [
+      "dry_run"
+    ],
+    "risk_signals": [],
+    "recommended_action": "nurture"
+  },
+  {
+    "raw": {
+      "company_name": "DataFlow Corp",
+      "website": "https://dataflow.dev",
+      "industry": "Developer Tools",
+      "location": "Austin, TX",
+      "employee_count": 30,
+      "description": "ETL pipeline builder for data engineering teams.",
+      "contact_name": null,
+      "contact_email": null,
+      "contact_title": null,
+      "source_url": "https://google.com/search?q=saas+austin",
+      "scraped_at": "2026-05-05T09:39:00.716134"
+    },
+    "score": 50,
+    "qualification_reasoning": "Dry run \u2014 no API call made.",
+    "fit_signals": [
+      "dry_run"
+    ],
+    "risk_signals": [],
+    "recommended_action": "nurture"
+  },
+  {
+    "raw": {
+      "company_name": "TinyStartup",
+      "website": "https://tinystartup.io",
+      "industry": "SaaS",
+      "location": "Austin, TX",
+      "employee_count": 3,
+      "description": "Pre-revenue MVP for social media scheduling.",
+      "contact_name": "Alex Lee",
+      "contact_email": "alex@tinystartup.io",
+      "contact_title": "Founder",
+      "source_url": "https://google.com/search?q=saas+austin",
+      "scraped_at": "2026-05-05T09:39:00.716134"
+    },
+    "score": 50,
+    "qualification_reasoning": "Dry run \u2014 no API call made.",
+    "fit_signals": [
+      "dry_run"
+    ],
+    "risk_signals": [],
+    "recommended_action": "nurture"
+  },
+  {
+    "raw": {
+      "company_name": "GovSecure Ltd",
+      "website": "https://govsecure.com",
+      "industry": "Cybersecurity",
+      "location": "Austin, TX",
+      "employee_count": 500,
+      "description": "Enterprise security solutions for government and defense.",
+      "contact_name": "Sarah Williams",
+      "contact_email": "sarah@govsecure.com",
+      "contact_title": "Director of BD",
+      "source_url": "https://google.com/search?q=saas+austin",
+      "scraped_at": "2026-05-05T09:39:00.716134"
+    },
+    "score": 50,
+    "qualification_reasoning": "Dry run \u2014 no API call made.",
+    "fit_signals": [
+      "dry_run"
+    ],
+    "risk_signals": [],
+    "recommended_action": "nurture"
+  }
+]

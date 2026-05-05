@@ -1,0 +1,6 @@
+company_name,website,industry,location,employee_count,contact_name,contact_email,contact_title,score,recommended_action,qualification_reasoning,fit_signals,risk_signals
+Acme SaaS Inc,https://acmesaas.com,SaaS,"Austin, TX",45,Jane Smith,jane@acmesaas.com,VP of Sales,50,nurture,Dry run — no API call made.,dry_run,
+CloudMetrics LLC,https://cloudmetrics.io,SaaS,"Austin, TX",120,Bob Johnson,bob@cloudmetrics.io,CTO,50,nurture,Dry run — no API call made.,dry_run,
+DataFlow Corp,https://dataflow.dev,Developer Tools,"Austin, TX",30,,,,50,nurture,Dry run — no API call made.,dry_run,
+TinyStartup,https://tinystartup.io,SaaS,"Austin, TX",3,Alex Lee,alex@tinystartup.io,Founder,50,nurture,Dry run — no API call made.,dry_run,
+GovSecure Ltd,https://govsecure.com,Cybersecurity,"Austin, TX",500,Sarah Williams,sarah@govsecure.com,Director of BD,50,nurture,Dry run — no API call made.,dry_run,
